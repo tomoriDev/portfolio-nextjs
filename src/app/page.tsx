@@ -1,9 +1,16 @@
 import { BannerComponent } from "@/components/banner";
+import NavbarComponent from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex-col items-center justify-between p-24">
-      <BannerComponent />
+    <div className="h-lvh flex flex-col">
+      <div className="">
+        <NavbarComponent />
+      </div>
+
+      <div className="banner">
+        <BannerComponent />
+      </div>
     </div>
   );
 }
